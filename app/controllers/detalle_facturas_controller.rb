@@ -1,5 +1,6 @@
 class DetalleFacturasController < ApplicationController
   before_action :set_detalle_factura, only: [:show, :edit, :update, :destroy]
+    before_action :authenticate_usuario!
 
   # GET /detalle_facturas
   # GET /detalle_facturas.json

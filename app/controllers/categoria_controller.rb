@@ -1,5 +1,6 @@
 class CategoriaController < ApplicationController
   before_action :set_categorium, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_usuario!
 
   # GET /categoria
   # GET /categoria.json
